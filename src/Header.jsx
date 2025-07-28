@@ -69,7 +69,6 @@ const Header = () => {
       {user && (
         <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
           
-          {/* Children Link - hidden on small screens */}
           <a
             href="#"
             className="hidden sm:inline text-white text-sm sm:text-base hover:underline"
@@ -77,7 +76,7 @@ const Header = () => {
             Children
           </a>
 
-          {/* Bell Icon - hidden on small screens */}
+          
           <button
             className="hidden sm:inline text-white text-xl hover:text-gray-400"
             title="Notifications"
@@ -85,7 +84,7 @@ const Header = () => {
             🔔
           </button>
 
-          {/* Language Selector - only in GPT mode */}
+          
           {isGptOpen && (
             <select
               onChange={handleLangChange}
@@ -99,7 +98,7 @@ const Header = () => {
             </select>
           )}
 
-          {/* GPT Toggle Button */}
+        
           <button
             onClick={handleGptClick}
             className="py-2 px-3 bg-red-600 text-white text-sm sm:text-base whitespace-nowrap rounded-lg hover:bg-red-700 transition duration-200"
@@ -107,7 +106,7 @@ const Header = () => {
             {isGptOpen ? "Homepage" : "GPT Search"}
           </button>
 
-          {/* Profile Avatar & Dropdown */}
+        
           <div className="relative" ref={dropdownRef}>
             <img
               src={PROFILELOGO}

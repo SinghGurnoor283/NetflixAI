@@ -81,10 +81,10 @@ const Login = () => {
 
   return (
     <div className="relative">
-      {/* Fixed Header */}
+      
       <Header />
 
-      {/* Background Image */}
+
       <main className="flex-grow relative">
       <div className="absolute inset-0 z-0 h-full">
         <img
@@ -94,7 +94,6 @@ const Login = () => {
         />
       </div>
 
-      {/* Scrollable Login Form */}
       <div className="relative z-10 flex justify-center items-start pt-40 min-h-screen">
         <form
           onSubmit={(e) => e.preventDefault()}
@@ -134,12 +133,12 @@ const Login = () => {
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
               {showPassword ? (
-                // Eye off icon (hide)
+              
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-5.523 0-10-4.477-10-10 0-1.366.327-2.665.9-3.818M9.88 9.88a3 3 0 014.242 4.243M15 12a3 3 0 01-3 3M3 3l18 18" />
                 </svg>
               ) : (
-                // Eye icon (show)
+               
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
